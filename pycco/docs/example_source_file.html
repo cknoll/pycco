@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>example_source_file.py</title>
+  <link rel="stylesheet" href="pycco.css">
+</head>
+<body>
+<div id='container'>
+  <div id="background"></div>
+  <div class='section'>
+    <div class='docs'><h1>example_source_file.py</h1></div>
+  </div>
+  <div class='clearall'>
+  <div class='section' id='section-0'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-0'>#</a>
+      </div>
+      <p>This is a reviewer-multiline-String.
+It can also span multiple lines.</p>
+<p>And it can contain <strong>markdown</strong> formatted text,
+like <a href="http://">Links</a> or <code>explicitly_featured(source, code)</code>.</p>
+<p>This example source file shows the use case of this review-mod:</p>
+<p>Suppose someone asked you for comments (in a general sense) on their code,
+you can add review comments (in a technical sense) marked by e.g.  <code>#::</code>
+instead of just <code>#</code> right at the specific location in the source file.
+The script extracts them and generates a nicely formated html file with
+a split view: reviewer comments right, complete source code left.</p>
+<p>Thus, your reviewer comments are much easier to overview and follow than
+without the split view.</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This is a general docstring of the module.</span>
+
+<span class="sd">It can</span>
+
+<span class="sd">span</span>
+
+
+<span class="sd">multiple lines.</span>
+<span class="sd">&quot;&quot;&quot;</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-1'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-1'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span class="c"># here comes some code</span>
+<span class="c"># ordinary comments are left unchanged</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">a</span> <span class="o">=</span> <span class="s">&quot;foo&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s">&quot;bar&quot;</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-2'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-2'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span class="k">def</span> <span class="nf">func1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">pass</span>
+    <span class="k">pass</span>
+    <span class="k">pass</span>
+
+    <span class="c"># very interesting code</span>
+    <span class="k">pass</span>
+    <span class="k">pass</span>
+    <span class="k">pass</span>
+    <span class="k">pass</span>
+
+    <span class="c"># complicated algorithm</span>
+    <span class="k">if</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+            <span class="k">pass</span>
+            <span class="k">pass</span>  <span class="c"># comment 1</span>
+            <span class="k">pass</span>
+            <span class="k">pass</span>
+            <span class="k">pass</span>
+            <span class="k">pass</span>
+            <span class="k">pass</span>
+            <span class="k">pass</span>
+            <span class="k">pass</span>
+            <span class="k">pass</span>
+
+            <span class="c"># short comment 2</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-3'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-3'>#</a>
+      </div>
+      <p>This part should be better documented</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>            <span class="k">pass</span>
+            <span class="k">pass</span>
+            <span class="k">pass</span>
+            <span class="k">pass</span>
+            <span class="k">pass</span>
+            <span class="n">z</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-4'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-4'>#</a>
+      </div>
+      <p>IMHO <code>z = 2 + 2</code>??</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>            <span class="k">pass</span>
+            <span class="k">pass</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+
+        <span class="c"># TODO: this should be outsourced to an extra module</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-5'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-5'>#</a>
+      </div>
+      <p>I think <code>sys.foo.bar</code> does this already</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-6'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-6'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre><span class="k">class</span> <span class="nc">MyClass1</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This is the docstring of the class</span>
+<span class="sd">    &quot;&quot;&quot;</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-7'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-7'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-8'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-8'>#</a>
+      </div>
+      
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">get1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-9'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-9'>#</a>
+      </div>
+      <p>This method needs a docstring</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">pass</span>
+        <span class="k">return</span> <span class="mi">1</span>
+
+</pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+</div>
+</body>

@@ -294,8 +294,8 @@ languages = {
     ".rb": { "name": "ruby", "symbol": "#",
         "multistart": "=begin", "multiend": "=end"},
 
-    ".py": { "name": "python", "symbol": "#",
-        "multistart": '"""', "multiend": '"""' },
+    ".py": { "name": "python", "symbol": "#::",
+        "multistart": '"""::', "multiend": '::"""' },
 
     ".scm": { "name": "scheme", "symbol": ";;",
         "multistart": "#|", "multiend": "|#"},
